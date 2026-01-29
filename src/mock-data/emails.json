@@ -1,0 +1,410 @@
+[
+  {
+    "id": "e1",
+    "to": "jeet",
+    "from": "admin@mailhey.com",
+    "subject": "Welcome to MailHey",
+    "body": "Your inbox is ready.",
+    "createdAt": "2026-01-15T10:00:00Z"
+  },
+  {
+    "id": "e2",
+    "to": "user2",
+    "from": "support@mailhey.com",
+    "subject": "Getting Started",
+    "body": "Here are some tips to get started.",
+    "createdAt": "2026-01-15T10:05:00Z"
+  },
+  {
+    "id": "e3",
+    "to": "user3",
+    "from": "alerts@mailhey.com",
+    "subject": "Security Alert",
+    "body": "New login detected on your account.",
+    "createdAt": "2026-01-15T10:10:00Z"
+  },
+  {
+    "id": "e4",
+    "to": "user4",
+    "from": "billing@mailhey.com",
+    "subject": "Invoice Available",
+    "body": "Your monthly invoice is now available.",
+    "createdAt": "2026-01-15T10:15:00Z"
+  },
+  {
+    "id": "e5",
+    "to": "user5",
+    "from": "noreply@mailhey.com",
+    "subject": "Verify Your Email",
+    "body": "Please verify your email address.",
+    "createdAt": "2026-01-15T10:20:00Z"
+  },
+  {
+    "id": "e6",
+    "to": "user6",
+    "from": "support@mailhey.com",
+    "subject": "Ticket Updated",
+    "body": "Your support ticket has been updated.",
+    "createdAt": "2026-01-15T10:25:00Z"
+  },
+  {
+    "id": "e7",
+    "to": "user7",
+    "from": "admin@mailhey.com",
+    "subject": "Policy Update",
+    "body": "We have updated our privacy policy.",
+    "createdAt": "2026-01-15T10:30:00Z"
+  },
+  {
+    "id": "e8",
+    "to": "user8",
+    "from": "marketing@mailhey.com",
+    "subject": "New Features",
+    "body": "Check out the new features we launched.",
+    "createdAt": "2026-01-15T10:35:00Z"
+  },
+  {
+    "id": "e9",
+    "to": "user9",
+    "from": "alerts@mailhey.com",
+    "subject": "Password Changed",
+    "body": "Your password was changed successfully.",
+    "createdAt": "2026-01-15T10:40:00Z"
+  },
+  {
+    "id": "e10",
+    "to": "user10",
+    "from": "billing@mailhey.com",
+    "subject": "Payment Received",
+    "body": "We received your payment. Thank you!",
+    "createdAt": "2026-01-15T10:45:00Z"
+  },
+
+  {
+    "id": "e11",
+    "to": "user11",
+    "from": "admin@mailhey.com",
+    "subject": "Welcome Aboard",
+    "body": "Thanks for joining MailHey.",
+    "createdAt": "2026-01-15T10:50:00Z"
+  },
+  {
+    "id": "e12",
+    "to": "user12",
+    "from": "support@mailhey.com",
+    "subject": "Support Follow-up",
+    "body": "Just checking in regarding your issue.",
+    "createdAt": "2026-01-15T10:55:00Z"
+  },
+  {
+    "id": "e13",
+    "to": "user13",
+    "from": "alerts@mailhey.com",
+    "subject": "Unusual Activity",
+    "body": "We noticed unusual activity on your account.",
+    "createdAt": "2026-01-15T11:00:00Z"
+  },
+  {
+    "id": "e14",
+    "to": "user14",
+    "from": "marketing@mailhey.com",
+    "subject": "Weekly Digest",
+    "body": "Here’s what happened this week.",
+    "createdAt": "2026-01-15T11:05:00Z"
+  },
+  {
+    "id": "e15",
+    "to": "user15",
+    "from": "billing@mailhey.com",
+    "subject": "Subscription Renewal",
+    "body": "Your subscription has been renewed.",
+    "createdAt": "2026-01-15T11:10:00Z"
+  },
+
+  {
+    "id": "e16",
+    "to": "user16",
+    "from": "admin@mailhey.com",
+    "subject": "Account Created",
+    "body": "Your account was created successfully.",
+    "createdAt": "2026-01-15T11:15:00Z"
+  },
+  {
+    "id": "e17",
+    "to": "user17",
+    "from": "support@mailhey.com",
+    "subject": "Issue Resolved",
+    "body": "Your reported issue has been resolved.",
+    "createdAt": "2026-01-15T11:20:00Z"
+  },
+  {
+    "id": "e18",
+    "to": "user18",
+    "from": "alerts@mailhey.com",
+    "subject": "Login Successful",
+    "body": "You logged in from a new device.",
+    "createdAt": "2026-01-15T11:25:00Z"
+  },
+  {
+    "id": "e19",
+    "to": "user19",
+    "from": "marketing@mailhey.com",
+    "subject": "Tips & Tricks",
+    "body": "Improve your productivity with these tips.",
+    "createdAt": "2026-01-15T11:30:00Z"
+  },
+  {
+    "id": "e20",
+    "to": "user20",
+    "from": "billing@mailhey.com",
+    "subject": "Refund Processed",
+    "body": "Your refund has been processed.",
+    "createdAt": "2026-01-15T11:35:00Z"
+  },
+
+  {
+    "id": "e21",
+    "to": "user21",
+    "from": "admin@mailhey.com",
+    "subject": "Maintenance Notice",
+    "body": "Scheduled maintenance tonight.",
+    "createdAt": "2026-01-15T11:40:00Z"
+  },
+  {
+    "id": "e22",
+    "to": "user22",
+    "from": "support@mailhey.com",
+    "subject": "Ticket Closed",
+    "body": "Your support ticket is now closed.",
+    "createdAt": "2026-01-15T11:45:00Z"
+  },
+  {
+    "id": "e23",
+    "to": "user23",
+    "from": "alerts@mailhey.com",
+    "subject": "Email Changed",
+    "body": "Your email address was updated.",
+    "createdAt": "2026-01-15T11:50:00Z"
+  },
+  {
+    "id": "e24",
+    "to": "user24",
+    "from": "marketing@mailhey.com",
+    "subject": "Product Update",
+    "body": "We’ve improved our platform.",
+    "createdAt": "2026-01-15T11:55:00Z"
+  },
+  {
+    "id": "e25",
+    "to": "user25",
+    "from": "billing@mailhey.com",
+    "subject": "Billing Reminder",
+    "body": "Your payment is due soon.",
+    "createdAt": "2026-01-15T12:00:00Z"
+  },
+
+  {
+    "id": "e26",
+    "to": "user26",
+    "from": "admin@mailhey.com",
+    "subject": "Welcome!",
+    "body": "We’re glad to have you here.",
+    "createdAt": "2026-01-15T12:05:00Z"
+  },
+  {
+    "id": "e27",
+    "to": "user27",
+    "from": "support@mailhey.com",
+    "subject": "Need Help?",
+    "body": "Let us know if you need assistance.",
+    "createdAt": "2026-01-15T12:10:00Z"
+  },
+  {
+    "id": "e28",
+    "to": "user28",
+    "from": "alerts@mailhey.com",
+    "subject": "Session Expired",
+    "body": "Please log in again.",
+    "createdAt": "2026-01-15T12:15:00Z"
+  },
+  {
+    "id": "e29",
+    "to": "user29",
+    "from": "marketing@mailhey.com",
+    "subject": "Community Update",
+    "body": "See what’s new in the community.",
+    "createdAt": "2026-01-15T12:20:00Z"
+  },
+  {
+    "id": "e30",
+    "to": "user30",
+    "from": "billing@mailhey.com",
+    "subject": "Payment Failed",
+    "body": "Please update your payment method.",
+    "createdAt": "2026-01-15T12:25:00Z"
+  },
+
+  {
+    "id": "e31",
+    "to": "user31",
+    "from": "admin@mailhey.com",
+    "subject": "System Update",
+    "body": "System update completed successfully.",
+    "createdAt": "2026-01-15T12:30:00Z"
+  },
+  {
+    "id": "e32",
+    "to": "user32",
+    "from": "support@mailhey.com",
+    "subject": "Support Request",
+    "body": "We received your request.",
+    "createdAt": "2026-01-15T12:35:00Z"
+  },
+  {
+    "id": "e33",
+    "to": "user33",
+    "from": "alerts@mailhey.com",
+    "subject": "Account Locked",
+    "body": "Too many failed login attempts.",
+    "createdAt": "2026-01-15T12:40:00Z"
+  },
+  {
+    "id": "e34",
+    "to": "user34",
+    "from": "marketing@mailhey.com",
+    "subject": "Feature Spotlight",
+    "body": "Discover this powerful feature.",
+    "createdAt": "2026-01-15T12:45:00Z"
+  },
+  {
+    "id": "e35",
+    "to": "user35",
+    "from": "billing@mailhey.com",
+    "subject": "Receipt",
+    "body": "Here’s your payment receipt.",
+    "createdAt": "2026-01-15T12:50:00Z"
+  },
+
+  {
+    "id": "e36",
+    "to": "user36",
+    "from": "admin@mailhey.com",
+    "subject": "Account Notice",
+    "body": "Please review your account settings.",
+    "createdAt": "2026-01-15T12:55:00Z"
+  },
+  {
+    "id": "e37",
+    "to": "user37",
+    "from": "support@mailhey.com",
+    "subject": "We’re Here to Help",
+    "body": "Contact us anytime.",
+    "createdAt": "2026-01-15T13:00:00Z"
+  },
+  {
+    "id": "e38",
+    "to": "user38",
+    "from": "alerts@mailhey.com",
+    "subject": "Backup Completed",
+    "body": "Your data backup completed.",
+    "createdAt": "2026-01-15T13:05:00Z"
+  },
+  {
+    "id": "e39",
+    "to": "user39",
+    "from": "marketing@mailhey.com",
+    "subject": "Special Announcement",
+    "body": "Big news coming soon!",
+    "createdAt": "2026-01-15T13:10:00Z"
+  },
+  {
+    "id": "e40",
+    "to": "user40",
+    "from": "billing@mailhey.com",
+    "subject": "Charge Notice",
+    "body": "A charge was applied to your account.",
+    "createdAt": "2026-01-15T13:15:00Z"
+  },
+
+  {
+    "id": "e41",
+    "to": "user41",
+    "from": "admin@mailhey.com",
+    "subject": "Welcome Back",
+    "body": "Glad to see you again.",
+    "createdAt": "2026-01-15T13:20:00Z"
+  },
+  {
+    "id": "e42",
+    "to": "user42",
+    "from": "support@mailhey.com",
+    "subject": "Support Reminder",
+    "body": "We’re waiting for your reply.",
+    "createdAt": "2026-01-15T13:25:00Z"
+  },
+  {
+    "id": "e43",
+    "to": "user43",
+    "from": "alerts@mailhey.com",
+    "subject": "Device Added",
+    "body": "A new device was added.",
+    "createdAt": "2026-01-15T13:30:00Z"
+  },
+  {
+    "id": "e44",
+    "to": "user44",
+    "from": "marketing@mailhey.com",
+    "subject": "Survey",
+    "body": "Tell us how we’re doing.",
+    "createdAt": "2026-01-15T13:35:00Z"
+  },
+  {
+    "id": "e45",
+    "to": "user45",
+    "from": "billing@mailhey.com",
+    "subject": "Billing Update",
+    "body": "Your billing info was updated.",
+    "createdAt": "2026-01-15T13:40:00Z"
+  },
+
+  {
+    "id": "e46",
+    "to": "user46",
+    "from": "admin@mailhey.com",
+    "subject": "Account Verified",
+    "body": "Your account is now verified.",
+    "createdAt": "2026-01-15T13:45:00Z"
+  },
+  {
+    "id": "e47",
+    "to": "user47",
+    "from": "support@mailhey.com",
+    "subject": "Final Follow-up",
+    "body": "Closing the support conversation.",
+    "createdAt": "2026-01-15T13:50:00Z"
+  },
+  {
+    "id": "e48",
+    "to": "user48",
+    "from": "alerts@mailhey.com",
+    "subject": "Security Update",
+    "body": "Important security improvements.",
+    "createdAt": "2026-01-15T13:55:00Z"
+  },
+  {
+    "id": "e49",
+    "to": "user49",
+    "from": "marketing@mailhey.com",
+    "subject": "New Campaign",
+    "body": "Check out our latest campaign.",
+    "createdAt": "2026-01-15T14:00:00Z"
+  },
+  {
+    "id": "e50",
+    "to": "user50",
+    "from": "billing@mailhey.com",
+    "subject": "Account Summary",
+    "body": "Here’s your account summary.",
+    "createdAt": "2026-01-15T14:05:00Z"
+  }
+]
