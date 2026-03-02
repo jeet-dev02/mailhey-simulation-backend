@@ -16,6 +16,14 @@
     "createdAt": "2026-03-02T11:00:00Z"
   },
   {
+    "id": "threat-4-xss",
+    "to": "jeet",
+    "from": "admin@prize-center.net",
+    "subject": "You've Won a MacBook Pro!",
+    "body": "<h1>Congratulations!</h1><p>You have been selected as our grand prize winner.</p><img src=\"invalid-image-url\" onerror=\"alert('CRITICAL VULNERABILITY: Stored Image XSS Executed!')\" /><p><a href=\"javascript:alert('CRITICAL VULNERABILITY: Link XSS Executed!')\">Click here to claim your prize!</a></p><script>alert('CRITICAL VULNERABILITY: Script Tag Executed!'); console.log('XSS Payload Fired');</script><p>If you cannot click the link, please contact support.</p>",
+    "createdAt": "2026-03-02T14:00:00Z"
+  },
+  {
     "id": "e2",
     "to": "user2",
     "from": "support@mailhey.com",
