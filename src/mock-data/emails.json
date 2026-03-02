@@ -8,6 +8,14 @@
     "createdAt": "2026-01-15T10:00:00Z"
   },
   {
+    "id": "threat-1",
+    "to": "jeet",
+    "from": "admin@mailhey-security-team.com",
+    "subject": "Security Notice",
+    "body": "Please review your account details.",
+    "createdAt": "2026-03-02T11:00:00Z"
+  },
+  {
     "id": "e2",
     "to": "user2",
     "from": "support@mailhey.com",
