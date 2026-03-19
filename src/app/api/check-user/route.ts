@@ -1,3 +1,80 @@
+/**
+ * @openapi
+ * /check-user:
+ *   post:
+ *     summary: Check if a user exists and generate token
+ *     description: Validates username, checks existence, and returns JWT if user exists
+ *     tags: [User]
+ *     
+ *     requestBody:
+ *       required: true
+ *       content:
+ *         application/json:
+ *           schema:
+ *             type: object
+ *             required:
+ *               - name
+ *             properties:
+ *               name:
+ *                 type: string
+ *                 example: user
+ *                 description: Username to check
+ *     
+ *     responses:
+ *       200:
+ *         description: User check completed
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 success:
+ *                   type: boolean
+ *                   example: true
+ *                 exists:
+ *                   type: boolean
+ *                   example: true
+ *                 username:
+ *                   type: string
+ *                   example: user
+ *                 token:
+ *                   type: string
+ *                   example: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
+ *                 cached:
+ *                   type: boolean
+ *                   example: false
+ *       
+ *       400:
+ *         description: Invalid input
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 exists:
+ *                   type: boolean
+ *                   example: false
+ *                 error:
+ *                   type: string
+ *                   example: Invalid username
+ *       
+ *       500:
+ *         description: Internal server error
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 exists:
+ *                   type: boolean
+ *                   example: false
+ *                 error:
+ *                   type: string
+ *                   example: Internal server error
+ */
+
+
+
 // src/app/api/check-user/route.ts
 import { NextResponse } from "next/server";
 import { SignJWT } from "jose";

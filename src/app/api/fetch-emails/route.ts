@@ -1,3 +1,21 @@
+/**
+ * @openapi
+ * /fetch-emails:
+ *   get:
+ *     summary: Get emails for a user
+ *     tags: [Emails]
+ *     parameters:
+ *       - in: query
+ *         name: recipient
+ *         required: true
+ *         schema:
+ *           type: string
+ *         
+ *     responses:
+ *       200:
+ *         description: Emails fetched successfully
+ */
+
 import { NextResponse } from "next/server";
 import emailsData from "@/mock-data/emails.json"; 
 import { delay } from "@/utils/delay";

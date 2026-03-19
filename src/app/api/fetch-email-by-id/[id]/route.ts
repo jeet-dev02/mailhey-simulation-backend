@@ -1,3 +1,96 @@
+/**
+ * @openapi
+ * /fetch-email-by-id/{id}:
+ *   get:
+ *     summary: Get a single email by ID
+ *     description: Fetch a specific email using its ID and inbox username
+ *     tags: [Emails]
+ *     
+ *     parameters:
+ *       - in: path
+ *         name: id
+ *         required: true
+ *         schema:
+ *           type: string
+ *         example: e1
+ *         description: Unique ID of the email
+ *       
+ *       - in: query
+ *         name: inbox
+ *         required: true
+ *         schema:
+ *           type: string
+ *         example: user
+ *         description: Inbox username to verify email ownership
+ *     
+ *     responses:
+ *       200:
+ *         description: Email fetched successfully
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 id:
+ *                   type: string
+ *                   example: e1
+ *                 sender:
+ *                   type: string
+ *                   example: admin@mailhey.com
+ *                 recipient:
+ *                   type: string
+ *                   example: jeet
+ *                 subject:
+ *                   type: string
+ *                   example: Welcome to MailHey
+ *                 body:
+ *                   type: string
+ *                   example: Your inbox is ready.
+ *                 body_html:
+ *                   type: string
+ *                   example: "<p>Your inbox is ready.</p>"
+ *                 createdAt:
+ *                   type: string
+ *                   example: 2026-01-15T10:00:00Z
+ *                 read:
+ *                   type: boolean
+ *                   example: true
+ *                 attachments:
+ *                   type: array
+ *                   items:
+ *                     type: object
+ *       
+ *       400:
+ *         description: Missing inbox parameter
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 success:
+ *                   type: boolean
+ *                   example: false
+ *                 message:
+ *                   type: string
+ *                   example: Inbox parameter 'inbox' not specified
+ *       
+ *       404:
+ *         description: Email not found
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 success:
+ *                   type: boolean
+ *                   example: false
+ *                 message:
+ *                   type: string
+ *                   example: Email not found
+ */
+
+
+
 import { NextResponse } from "next/server";
 // Make sure this points to your JSON file or store correctly
 import emailsData from "@/mock-data/emails.json"; 

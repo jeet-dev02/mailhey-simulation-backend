@@ -1,3 +1,77 @@
+/**
+ * @openapi
+ * /mark-read:
+ *   post:
+ *     summary: Mark an email as read
+ *     description: Updates the read status of an email using its ID
+ *     tags: [Emails]
+ *     
+ *     requestBody:
+ *       required: true
+ *       content:
+ *         application/json:
+ *           schema:
+ *             type: object
+ *             required:
+ *               - emailId
+ *             properties:
+ *               emailId:
+ *                 type: string
+ *                 example: e1
+ *                 description: ID of the email to mark as read
+ *     
+ *     responses:
+ *       200:
+ *         description: Email marked as read successfully
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 success:
+ *                   type: boolean
+ *                   example: true
+ *                 message:
+ *                   type: string
+ *                   example: Email marked as read
+ *                 emailId:
+ *                   type: string
+ *                   example: e1
+ *       
+ *       400:
+ *         description: Missing emailId in request body
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 error:
+ *                   type: string
+ *                   example: emailId is required
+ *       
+ *       404:
+ *         description: Email not found
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 error:
+ *                   type: string
+ *                   example: Email not found
+ *       
+ *       500:
+ *         description: Server error
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 error:
+ *                   type: string
+ *                   example: Failed to mark email as read
+ */
+
 import { NextResponse } from "next/server";
 import { emailStore } from "@/mock-data/emailStore";
 
