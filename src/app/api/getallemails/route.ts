@@ -1,12 +1,10 @@
-
 import { NextResponse } from 'next/server';
 import { emailStore } from "@/mock-data/emailStore"; 
 
-// Add this to handle preflight CORS requests from the browser
 export async function OPTIONS() {
     return NextResponse.json({}, {
         headers: {
-            'Access-Control-Allow-Origin': '*', // Allows any port to access this API
+            'Access-Control-Allow-Origin': '*',
             'Access-Control-Allow-Methods': 'GET, OPTIONS',
             'Access-Control-Allow-Headers': 'Content-Type, Authorization',
         },
@@ -15,27 +13,31 @@ export async function OPTIONS() {
 
 export async function GET() {
     try {
-        const userTally: Record<string, number> = {};
-
-        emailStore.forEach((email: any) => {
-            if (!email.to) return;
-            const username = email.to.includes('@') ? email.to : `${email.to}@mailhey.com`;
-            if (userTally[username]) {
-                userTally[username]++;
-            } else {
-                userTally[username] = 1;
-            }
+        const allEmails = emailStore.map((email: any) => {
+            
+            const username = email.to ? (email.to.includes('@') ? email.to : `${email.to}@mailhey.com`) : 'unknown@mailhey.com';
+            
+           
+            return {
+                id: email.id || Math.random().toString(),
+                sender: email.from || email.sender || "System",
+                subject: email.subject || "(No Subject)",
+                body: email.body || email.text || email.content || email.snippet || "",
+                createdAt: email.createdAt || email.date_received || email.date || new Date().toISOString(),
+                username: username 
+            };
         });
 
-        const aggregatedData = Object.keys(userTally).map((username) => ({
-            username: username,
-            emailCount: userTally[username]
-        }));
+        
+        allEmails.sort((a: any, b: any) => {
+            const dateA = new Date(a.createdAt).getTime();
+            const dateB = new Date(b.createdAt).getTime();
+            return dateB - dateA;
+        });
 
-        // ADD THE CORS HEADERS HERE TOO
         return NextResponse.json({
             status: "success",
-            data: aggregatedData
+            data: allEmails 
         }, {
             headers: {
                 'Access-Control-Allow-Origin': '*',
@@ -44,13 +46,10 @@ export async function GET() {
         });
 
     } catch (error) {
-        console.error("Aggregation Error:", error);
+        console.error("Fetch Error:", error);
         return NextResponse.json(
-            { status: "error", message: "Failed to aggregate system emails" }, 
-            { 
-                status: 500,
-                headers: { 'Access-Control-Allow-Origin': '*' }
-            }
+            { status: "error", message: "Failed to fetch system emails" }, 
+            { status: 500, headers: { 'Access-Control-Allow-Origin': '*' } }
         );
     }
 }
